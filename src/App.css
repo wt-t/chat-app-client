@@ -1,38 +1,66 @@
+* {
+    box-sizing: border-box;
+}
+
+#root {
+    display: flex;
+}
+
 .App {
-  text-align: center;
+    margin: 0 auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.button {
+    font-size: 30px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.chat {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 50vw;
+    min-height: 500px;
+
+    border-radius: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    outline: 1px solid black;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.chat-footer {
+    width: 100%;
+    border-top: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.chat-window {
+    width: 90%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.message-body {
+    border-top: 1px solid gray;
+}
+
+.msg-header {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.nik {
+    margin: 0;
+    color: gray;
+    margin-right: 30px;
+}
+
+.datetime {
+    margin: 0;
+    color: gray;
+}
+
+.message-text {
+    margin: 0;
+    margin-bottom: 15px;
 }
